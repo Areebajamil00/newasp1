@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>comment system</h2>
+
+
+    @*<table width="100%" cellpadding="5" cellspacing="2" border="0">
+    <tr>
+        <td colspan="2">
+            <div id="divMessage" style="color:red; font-weight:bold;"></div>
+        </td>
+    </tr>
+    <tr>
+        <td>Name : </td>
+        <td>@Html.TextBox("name", "", new { @Id = "txtName" })</td>
+    </tr>
+    <tr>
+        <td>Comment : </td>
+        <td>@Html.TextArea("comment", "", new { @Id = "txtComment" })</td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align:center;">
+            <input type="button" value="Post Comment" id="btnValidate" onclick="javascript: Postcomment();" />
+        </td>
+    </tr>
+</table>
+<div>--------------------Comment--------------------</div>
+<div id="divloadingcomment"></div>
+<table id="commenttable" border="1">
+    <tbody></tbody>
+</table>*@
+
+<div class="row">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 class="page-title">User Comment</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1">
+                <div class="thumbnail">
+
+                    <img class="img-responsive user-photo"
+                         src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <textarea class="form-control"
+                                  cols="15"
+                                  id="commentInput"></textarea>
+                    </div>
+                    <div class="panel-heading comment-action">
+                        <div class="submit-comment">
+                            <a href="https://www.blogger.com/null" id="addNewCommentBtn">Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
